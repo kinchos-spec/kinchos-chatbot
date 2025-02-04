@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-# Sample FAQs
 faq_responses = {
     "designs": "You can explore our latest collections here: [Insert your link]",
     "pricing": "Our rings start from [Insert price] and vary based on design and gemstone selection.",
@@ -14,11 +13,10 @@ faq_responses = {
 def home():
     return "Kinchos Chatbot is running!"
 
-@app.route("/chat", methods=["POST"])
+@app.route("/chat", methods=["POST"])  # <- This is the important line
 def chat():
     user_input = request.json.get("message", "").lower()
-    
-    # Basic keyword matching for FAQ
+
     if "designs" in user_input:
         return jsonify({"response": faq_responses["designs"]})
     elif "pricing" in user_input:
