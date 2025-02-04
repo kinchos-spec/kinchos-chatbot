@@ -13,8 +13,11 @@ faq_responses = {
 def home():
     return "Kinchos Chatbot is running!"
 
-@app.route("/chat", methods=["POST"])
+@app.route("/chat", methods=["POST", "GET"])
 def chat():
+    if request.method == "GET":
+        return jsonify({"response": "This route only supports POST requests. Try using Postman or cURL."})
+
     user_input = request.json.get("message", "").lower()
 
     if "designs" in user_input:
