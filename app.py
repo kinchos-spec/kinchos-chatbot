@@ -13,7 +13,7 @@ faq_responses = {
 def home():
     return "Kinchos Chatbot is running!"
 
-@app.route("/chat", methods=["POST"])  # <- This is the important line
+@app.route("/chat", methods=["POST"])
 def chat():
     user_input = request.json.get("message", "").lower()
 
