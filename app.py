@@ -1,10 +1,8 @@
-from flask import Flask, request, jsonify, render_template
-from flask_cors import CORS  # Import CORS
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
-
-# Allow only your website to make requests (RECOMMENDED)
-CORS(app, resources={r"/chat": {"origins": "https://www.kinchosjewellery.com"}})
+CORS(app, resources={r"/*": {"origins": "*", "methods": ["GET", "POST"], "allow_headers": ["Content-Type"]}})
 
 # FAQ responses
 faq_responses = {
