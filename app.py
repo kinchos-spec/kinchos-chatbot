@@ -29,9 +29,6 @@ faq_responses = {
     "0": "⬅️ Returning to the main menu..."
 }
 
-@app.route('/')
-def home():
-    return render_template('index.html')
 
 @app.route('/chat', methods=['POST'])
 def chat():
