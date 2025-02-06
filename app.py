@@ -4,6 +4,12 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*", "methods": ["GET", "POST"], "allow_headers": ["Content-Type"]}})
 
+@app.route("/", methods=["GET", "HEAD"])
+def home():
+    if request.method == "HEAD":
+        return "", 200  # Return an empty response for HEAD requests
+    return "Kinchos Digital Concierge is running!"
+
 # FAQ responses
 faq_responses = {
     "1": "✨ We specialize in bespoke fine jewelry featuring diamonds, sapphires, rubies, spinels, aquamarines, peridots, tourmalines, and other precious gemstones. 💍 Explore rings, earrings, pendants, brooches, and wedding jewelry.",
