@@ -22,10 +22,10 @@ faq_responses = {
     "8": "📞 Yes! You can book a consultation via WhatsApp: https://wa.me/6593354380",
     "9": "💎 Yes! We can repurpose your existing gemstones into a brand-new setting. Our team will assess the gemstone’s condition before confirming the design possibilities.",
     "10": "📦 Yes! We ship worldwide via DHL Express. Shipping costs depend on your location and order value.",
-    "11": "⏳ Ready-made pieces ship within 2 business days.\n✨ Bespoke jewelry takes between 3 to 8 weeks, depending on complexity.",
-    "12": "🏢 We strongly recommend self-collection for all purchases. 📍 Orders can be collected by appointment only in Singapore.",
-    "13": "📩 Contact us via:\n📞 WhatsApp: https://wa.me/6593354380\n📩 Email: info@kinchosjewellery.com",
-    "14": "💬 Absolutely! Chat with us on WhatsApp: https://wa.me/6593354380",
+"10-1": "⏳ Ready-made pieces ship within 2 business days.\n✨ Bespoke jewelry takes between 3 to 8 weeks, depending on complexity.",
+"10-2": "🏢 We strongly recommend self-collection for all purchases.\n📍 Orders can be collected by appointment only in Singapore.",
+"10-3": "📩 Contact us via:\n📞 WhatsApp: https://wa.me/6593354380\n📧 Email: info@kinchosjewellery.com",
+"10-4": "💬 Absolutely! Chat with us on WhatsApp for further assistance:\n📩 https://wa.me/6593354380",
     "0": "⬅️ Returning to the main menu..."
 }
 
